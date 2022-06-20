@@ -1,0 +1,261 @@
+
+:root {
+  /*  variable decleration with  syntax */
+  --dark-blue:rgb(5, 73, 99);
+  --light: #fff;
+  --navlink-color: #75b3f5;
+  --bgcolor: #69a0ed;
+}
+h1 {
+  font-size: 1em;
+  margin-left: 1rem;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(6, 72, 105, 0.849), rgb(3, 96, 133)),
+  url("../images/blue-background1.jpg");
+  color: var(--light);
+  z-index: 1;
+}
+/* header section ,logo,navigation, */
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+.logo {
+  width: 60px;
+  text-decoration: none;
+
+  font-size: 30px;
+
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.nav-links {
+  text-align: center;
+  background: #365d95;
+  padding: 10px 40px;
+  border-bottom-left-radius: 18px;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+.nav-links ul li a {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 18px;
+}
+/* header section end */
+/* Profile info section - side bar,profile picture,*/
+.left-sidebar {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--dark-blue);
+  z-index: -1;
+}
+/* Portfolio section row */
+.row {
+  padding: 0 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 5%;
+}
+.right-col {
+  flex-basis: 55%;
+}
+.left-col {
+  flex-basis: 30%;
+}
+/* left colum profile photo*/
+.left-col img {
+  width: 85%;
+  cursor: pointer;
+  z-index: -1;
+  filter: grayscale(0);
+  transition: transform 0.2s;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+/* profile photo hover effects*/
+.left-col img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: grayscale(1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* About me heading*/
+.right-col h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2em;
+  font-family: 'Gentium Basic', serif;
+  text-align: center;
+  margin-top: 10px;
+}
+/* About me paragraph*/
+.right-col p {
+  color: var(--light);
+  margin: 10px 0 20px;
+  line-height: 1.2em;
+  font-family: 'Poppins', sans-serif;
+ text-align: center;
+ 
+}
+/* end of profile info section */
+/* a striped border line to seperate section*/
+.striped-border {
+  border: 1px dashed rgb(90, 176, 246);
+  width: 100%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+/* work gallery*/
+.section {
+  padding: 0 10%;
+  display: flex;
+  height: 88%;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.left-section {
+  flex-basis: 30%;
+}
+/* work gallery heading*/
+.left-section h1 {
+  color: var(--light);
+  font-size: 36px;
+}
+/* work gallery paragraph*/
+.left-section p {
+  color: var(--light);
+  font-size: 18px;
+  line-height: 25px;
+}
+/* work gallery section */
+.right-section {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.right-section p {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* work gallery section */
+.card {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: 0.5;
+}
+/* work gallery section  effect */
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card1 {
+  background-image: url("../images/work1.jpg");
+}
+.card2 {
+  background-image: url("../images/work2.jpg");
+}
+.card3 {
+  background-image: url("../images/placeholder-image1.jpeg");
+}
+.card4 {
+  background-image: url("../images/placeholder-image1.jpeg");
+}
+/*End of work gallery  */
+/* footer section */
+.footer {
+  margin-top: 70px;
+  width: 100%;
+  padding: 100px 15%;
+  background-color: #333;
+  color: var(--light);
+  display: flex;
+}
+.footer div {
+  text-align: center;
+}
+/* Footer heading */
+.footer div h3 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.col-1 a{
+  margin: 10px;
+}
+.col-1:hover {
+}
+/* footer colum 1 */
+.col-2 {
+  flex-grow: 2;
+}
+.col-2 a{
+  flex-grow: 2;
+  text-decoration: none;
+}
+/* footer colum 2 */
+.col-2 #download {
+  display: inline;
+  color: rgb(19, 1, 1);
+ 
+  color: #fff;
+}
+/* footer colum 2 download button */
+.col-2 button {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 5px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.social-icon{
+  /* footer colum 3 contact icon link */
+margin-top: 10px;
+font-size: 10px;
+}
+.col-3 h3{
+  margin-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  /*  flex-direction to stack the navbar, sidebar, and body */
+  .row,
+  .left-sidebar,
+  .right-col,
+  .logo,
+   nav,
+  .container,
+  .section,
+  .left-section,
+  .footer {
+    flex-direction: column;
+  }
+}
+
